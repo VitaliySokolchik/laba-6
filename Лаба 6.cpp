@@ -171,16 +171,12 @@ int main()
     system("pause");
     char* string = new char[40];
 
-    // Просим пользователя ввести свое имя
     std::cout << "Enter your name: ";
     std::cin >> string;
 
-    // Сохраняем то, что ввел пользователь
     Massiv<char*> Massiv(string);
-
-    // Удаляем временную строку
+    
     delete[] string;
 
-    // Пытаемся вывести то, что ввел пользователь
     Massiv.print();
 }
